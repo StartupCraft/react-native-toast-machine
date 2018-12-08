@@ -43,6 +43,17 @@
     "setupFiles": [
       "./config/enzyme.js"
     ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
+    "moduleFileExtensions": [
+      "js"
+    ],
+    "modulePathIgnorePatterns": [
+      "dist",
+      "example",
+      "node_modules/react-native/node_modules/"
+    ],
     "coverageThreshold": {
       "global": {
         "branches": 90,
@@ -51,13 +62,6 @@
         "statements": 96
       }
     },
-    "moduleFileExtensions": [
-      "js"
-    ],
-    "modulePathIgnorePatterns": [
-      "example",
-      "node_modules/react-native/node_modules/"
-    ],
     "coverageDirectory": "coverage",
     "collectCoverageFrom": [
       "src/**/*.js"
@@ -69,6 +73,7 @@
     "babel-preset-react-native": "^4.0.1",
     "enzyme": "^3.7.0",
     "enzyme-adapter-react-16": "^1.7.0",
+    "enzyme-to-json": "^3.3.5",
     "eslint": "^5.9.0",
     "eslint-config-airbnb": "^17.1.0",
     "jest": "^23.6.0",
